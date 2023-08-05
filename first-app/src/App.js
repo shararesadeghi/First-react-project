@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Navbar from "./component/Navbar";
-import Banner from "./component/Banner";
-import Cards from "./component/Cards";
-import Search from './component/Search';
-import Logos from './component/Logos';
+import Landing from './component/Landing';
+import Products from './component/Products';
 import Footer from './component/Footer';
+import AboutUs from './component/AboutUs';
 
 class App extends Component {
 
@@ -12,10 +12,11 @@ class App extends Component {
     return (
       <div>
         <Navbar/>
-        <Banner/>
-        <Cards/>
-        <Search/>
-        <Logos/>
+        <Switch>
+         <Route path="/products" component={Products}/>
+         <Route path="/aboutus" component={AboutUs}/>
+         <Route path="/" component={Landing}/>
+         </Switch>
         <Footer/>
       </div>
       

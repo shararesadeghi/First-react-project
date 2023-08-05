@@ -15,16 +15,16 @@
 
 .textContainer h1{
     font-size: 6rem;
-    color: #fff;
+    color:#6FCFFF;
 }
 
 .textContainer p{
     font-size: 1.3rem;
     margin-top: 20px;
-    color: #fff;
+    color: #6FCFFF;
 }
 
 .textContainer span{
-    color: rgb(230, 81, 217);
+    color: #F9731A;
     font-weight: bold;
 }
