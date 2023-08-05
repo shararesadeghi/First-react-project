@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Banner.module.css";
-import banner from "../images/iphone 15.jpeg"
+import banner from "../images/iphone 15.jpeg";
 
 const Banner = () => {
     return (
