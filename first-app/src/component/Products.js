@@ -19,9 +19,9 @@ class Products extends Component {
         return (
             <div className={styles.container}>
                  {
-                 !this.state.products ? <h1>Loading...</h1>
-                 :this.state.products.map(product => <Card key={product.id} image={product.image} name={product.name} cost={`${product.price} $`}/>)
-                 
+                 this.state.products.length ? 
+                 this.state.products.map(product => <Card key={product.id} image={product.image} name={product.name} cost={`${product.price} $`}/>)
+                 : <h1>Loading...</h1>
                 }
 
             </div>
