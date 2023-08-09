@@ -15,7 +15,7 @@ class App extends Component {
         <Navbar/>
         <Routes>
          <Route path="/products" element={<Products/>}/>
-         <Route path="/aboutus" element={<AboutUs/>}/>
+         <Route path="/aboutus/*" element={<AboutUs/>}/>
          <Route path="/" element={<Landing/>}/>
          <Route path="/notfound" element={<NotFound/>}/>
          <Route path="/*" element = {<Navigate to="/notfound"/>}/>
