@@ -6,6 +6,7 @@ import Products from './component/Products';
 import Footer from './component/Footer';
 import AboutUs from './component/AboutUs';
 import NotFound from './component/NotFound';
+import Programmers from './component/Programmers';
 
 class App extends Component {
 
@@ -15,7 +16,10 @@ class App extends Component {
         <Navbar/>
         <Routes>
          <Route path="/products" element={<Products/>}/>
-         <Route path="/aboutus/*" element={<AboutUs/>}/>
+         <Route path="/aboutus/*" element={<AboutUs/>}>
+                <Route path ="programmers" element = {<Programmers/>}/>
+                <Route path = "drivers" element = {<h1>Drivers</h1>}/>
+                </Route>
          <Route path="/" element={<Landing/>}/>
          <Route path="/notfound" element={<NotFound/>}/>
          <Route path="/*" element = {<Navigate to="/notfound"/>}/>

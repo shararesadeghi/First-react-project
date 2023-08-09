@@ -1,5 +1,4 @@
-import { useNavigate, Link, Routes, Route} from "react-router-dom";
-import Programmers from './Programmers';
+import { useNavigate, Link, Outlet} from "react-router-dom";
 
 const AboutUs = () => {
 
@@ -14,13 +13,9 @@ const AboutUs = () => {
                 <ul>
                     <li><Link to = "programmers">Programmers</Link></li>
                     <li><Link to = "drivers">Driversers</Link></li>
+                    <Outlet/>
                 </ul>
-                <div>
-                    <Routes>
-                        <Route path ="programmers" element = {<Programmers/>}/>
-                        <Route path = "drivers" element = {<h1>Drivers</h1>}/>
-                    </Routes>
-                </div>
+                
             </div>
         );
 }
